@@ -13,7 +13,7 @@ All work is my own and figures and images used are from:
 ![front page](/screenshots/front.png)
 
 Each set of images can be converted to PDF for presentations in any order that 
-you want. For example, if you want to produce a PDF of the fungi slides
+you want. For example, if you want to produce a PDF of the fungi slides:
 
 ```bash
 
