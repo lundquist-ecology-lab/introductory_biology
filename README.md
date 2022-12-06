@@ -12,3 +12,20 @@ All work is my own and figures and images used are from:
 
 ![front page](/screenshots/front.png)
 
+Each set of images can be converted to PDF for presentations in any order that 
+you want. For example, if you want to produce a PDF of the fungi slides
+
+```bash
+
+## Requires imagemagick and github-files-fetcher
+
+# npm install -g github-files-fetcher
+
+fetcher --url=https://github.com/lundquist-ecology-lab/introductory_biology/tree/main/fungi --out=/tmp
+cd /tmp/fungi
+convert `ls -1v` fungi.pdf #`ls -1v` sorts .JPG files numerically, not alphabetically
+mv fungi.pdf ~/fungi.pdf
+cd ~/
+rm -R /tmp/fungi
+
+```
